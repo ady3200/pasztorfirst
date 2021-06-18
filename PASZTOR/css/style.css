@@ -1,0 +1,186 @@
+/*NAVBAR*/
+nav .brandtext {
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 40px;
+}
+nav .bluetext {
+  color: #4cc1f6;
+  font-size: 21px;
+}
+nav .navlinks {
+  background-color: #4cc1f6;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+nav .navlinkblack {
+  color: black;
+}
+nav .navmenubar {
+  background-color: #4cc1f6;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+}
+nav .navmenubar1 {
+  background-color: #4cc1f6;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+}
+nav .active {
+  color: #4cc1f6;
+}
+/*------*/
+
+/*KerdesekEsValaszokFormPage*/
+.formtext {
+  font-size: 20px;
+}
+.lightbluecolor {
+  color: #4cc1f6;
+}
+.roundedbutton {
+  border-radius: 40px;
+  background-color: #4cc1f6;
+  color: white;
+}
+/*------*/
+
+/*KapcsolatPage*/
+#contact .contacttitle {
+  font-weight: 800;
+  font-size: 20px;
+}
+/*------*/
+/*ModositasiInditvanyokPage*/
+#modind .widgets {
+  background-color: #bbe6fa;
+  color: #4cc1f6;
+  border-radius: 40px;
+}
+#modind .widgets2 {
+  background-color: #bbe6fa;
+}
+#modind .texttitles {
+  font-size: 25px;
+  font-weight: bold;
+}
+#modind .date {
+  font-size: 25px;
+  color: #4cc1f6;
+}
+#modind .mandate {
+  font-size: 25px;
+}
+.pagi a {
+  text-decoration: none;
+}
+.pagi .active {
+  border-radius: 50%;
+  color: white;
+  padding: 12px;
+  background-color: #4cc1f6;
+}
+/*SROOM*/
+#sroom .widgets {
+  background-color: #bbe6fa;
+  color: #4cc1f6;
+  border-radius: 40px;
+}
+#sroom .widgets2 {
+  background-color: #bbe6fa;
+}
+#sroom .date {
+  font-size: 25px;
+  color: #4cc1f6;
+}
+#sroom .VMA {
+  font-size: 25px;
+}
+#sroom .texttitles {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*------*/
+/*MIKROBLOG*/
+
+/*------*/
+/*FOOTER*/
+#footer {
+  min-height: 9vh;
+}
+.bglightblue {
+  background-color: #bbe6fa;
+}
+#footer .navlinks {
+  background-color: #4cc1f6;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+.bluetext {
+  color: #4cc1f6;
+}
+/*------*/
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 992px) {
+  /*NAV*/
+  nav .navlinksmargin {
+    margin-left: 150px;
+  }
+  /*-----*/
+  /*KerdesekEsValaszokFormPage*/
+  .mx {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  /*-----*/
+  /*FOOTER*/
+  #footer .footerlinks {
+    margin-left: auto;
+  }
+  /*-----*/
+  /*MODIND*/
+  #modind .mx {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .pagi {
+    margin-left: 100px;
+  }
+  /*-----*/
+  /*MIKROBLOG*/
+  #mikroblog .pagi {
+    margin-left: 160px;
+  }
+  /*------*/
+}
+@media screen and (max-width: 992px) {
+  /*NAV*/
+  nav .navmenubar1 {
+    display: none;
+  }
+  nav #navbarNav {
+    background-color: #4cc1f6;
+    width: 100%;
+  }
+  /*------*/
+  /*FOOTER*/
+  #footer .footerimages {
+    display: none;
+  }
+  #footer .footerlinks {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  /*------*/
+}
+
+/*------*/
