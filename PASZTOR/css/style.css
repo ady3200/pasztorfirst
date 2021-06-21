@@ -30,9 +30,7 @@ nav .navmenubar1 {
   padding: 16px;
   border-radius: 50%;
 }
-nav .active {
-  color: #4cc1f6;
-}
+
 /*------*/
 
 /*KerdesekEsValaszokFormPage*/
@@ -107,9 +105,85 @@ nav .active {
 
 /*------*/
 /*MIKROBLOG*/
+#mikroblog a {
+  text-decoration: none;
+}
+/*------*/
+/*ABOUTME*/
+#aboutme .bggray {
+  background-color: #a6e3ff;
+}
+#aboutme .badges {
+  background-color: #cdefff;
+  color: #4cc1f6;
+  font-size: 15px;
+}
 
 /*------*/
+/*SCHOOLVISIT*/
+#schoolvisit .disq {
+  width: 50px;
+  height: 50px;
+}
+#schoolvisit .schoolvisiticons {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+}
+#schoolvisit .twitter {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #4cc1f6;
+  color: white;
+}
+#schoolvisit .google {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+#schoolvisit .questionmark {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#schoolvisit .smalldisq {
+  width: 25px;
+  height: 25px;
+}
+#schoolvisit .redheart {
+  color: red;
+}
+#schoolvisit p.hover:hover {
+  border-bottom: 3px solid rgb(139, 139, 255);
+  cursor: pointer;
+}
+/*------*/
+/*QUESTION AND ANSWERES*/
+.questionanswer {
+  background-color: #cdefff;
+}
+.qabutton {
+  border-radius: 40px;
+  border: 1px solid #4cc1f6;
+  background-color: white;
+  color: #4cc1f6;
+}
+/*------*/
+/*QA*/
+#qa .avatar {
+  height: 50px;
+}
 /*FOOTER*/
+
 #footer {
   min-height: 9vh;
 }
@@ -133,6 +207,9 @@ nav .active {
   /*NAV*/
   nav .navlinksmargin {
     margin-left: 150px;
+  }
+  nav .active {
+    color: #4cc1f6;
   }
   /*-----*/
   /*KerdesekEsValaszokFormPage*/
@@ -159,8 +236,20 @@ nav .active {
   #mikroblog .pagi {
     margin-left: 160px;
   }
+  #mikroblog .avatar {
+    height: 50px;
+  }
   /*------*/
+  /*SCHOOLVISIT*/
+  #schoolvisit .avatar {
+    height: 50px;
+  }
+  #schoolvisit .schoolvisithide {
+    display: none;
+  }
+  /*-------*/
 }
+
 @media screen and (max-width: 992px) {
   /*NAV*/
   nav .navmenubar1 {
@@ -171,6 +260,56 @@ nav .active {
     width: 100%;
   }
   /*------*/
+
+  /*MIKROBLOG*/
+  #mikroblog .avatar {
+    height: 50px;
+  }
+  /*SCHOOLVISIT*/
+  #schoolvisit .avatar {
+    height: 50px;
+  }
+  #schoolvisit .userpicture {
+    display: none;
+  }
+  #schoolvisit textarea {
+    height: 30px;
+  }
+  /*-------*/
+
+  /*------*/
+  /*ABOUTME*/
+  #aboutme .badges {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #aboutme .badgescont {
+    text-align: center;
+  }
+  #aboutme .profiles {
+    display: none;
+  }
+  #aboutme .aboutmecol1 {
+    order: 2;
+  }
+  #aboutme .aboutmecol2 {
+    order: 1;
+  }
+  #aboutme .titlesdown {
+    margin-top: 30px;
+  }
+  /*------*/
+  /*SCHOOLVISIT*/
+  #schoolvisit .disqtext {
+    font-size: 30px;
+  }
+  /*-------*/
+  /*QA*/
+  #qa .avatar {
+    height: 50px;
+  }
+  /*--------*/
   /*FOOTER*/
   #footer .footerimages {
     display: none;
