@@ -48,7 +48,10 @@ nav .navmenubar1 {
 nav .navtogglerx {
   background-color: #4cc1f6;
   color: white;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 17px;
+  padding-left: 17px;
   border-radius: 50%;
 }
 
@@ -239,6 +242,12 @@ nav .navtogglerx {
 #qa .avatar {
   height: 50px;
 }
+/*------*/
+/*CALENDAR*/
+.cal {
+  height: 25px;
+}
+/*--------*/
 /*FOOTER*/
 
 #footer {
