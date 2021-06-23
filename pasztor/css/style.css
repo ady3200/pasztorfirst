@@ -1,9 +1,15 @@
+body {
+  background-color: #dddddd;
+}
 /*NAVBAR*/
 nav .brandtext {
   font-family: "Playfair Display", serif;
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 40px;
+}
+nav .dropstart::before{
+  content: none;
 }
 nav .bluetext {
   color: #4cc1f6;
@@ -12,6 +18,15 @@ nav .bluetext {
 nav .navlinks {
   background-color: #4cc1f6;
   padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+nav .navlinkfb {
+  background-color: #4cc1f6;
+  padding-right: 11.5px;
+  padding-left: 11.5px;
+  padding-top: 9.8px;
+  padding-bottom: 9.8px;
   color: white;
   border-radius: 50%;
 }
@@ -31,6 +46,18 @@ nav .navmenubar1 {
   border-radius: 50%;
 }
 
+.hide{
+  display: none;
+}
+.togglenav a{
+  text-decoration: none;
+}
+.togglenav .textwhite{
+  color:white;
+}
+.darkerbluebg{
+  background-color: #4cc1f6;
+}
 /*------*/
 
 /*KerdesekEsValaszokFormPage*/
@@ -63,15 +90,15 @@ nav .navmenubar1 {
   background-color: #bbe6fa;
 }
 #modind .texttitles {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 #modind .date {
-  font-size: 25px;
+  font-size: 22px;
   color: #4cc1f6;
 }
 #modind .mandate {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagi a {
   text-decoration: none;
@@ -82,6 +109,28 @@ nav .navmenubar1 {
   padding: 12px;
   background-color: #4cc1f6;
 }
+/*-------*/
+/*TALKS*/
+#talks .widgets {
+  background-color: #bbe6fa;
+  color: #4cc1f6;
+  border-radius: 40px;
+}
+#talks .widgets2 {
+  background-color: #bbe6fa;
+}
+#talks .texttitles {
+  font-size: 22px;
+  font-weight: bold;
+}
+#talks .date {
+  font-size: 22px;
+  color: #4cc1f6;
+}
+#talks .mandate {
+  font-size: 22px;
+}
+/*-------*/
 /*SROOM*/
 #sroom .widgets {
   background-color: #bbe6fa;
@@ -92,14 +141,14 @@ nav .navmenubar1 {
   background-color: #bbe6fa;
 }
 #sroom .date {
-  font-size: 25px;
+  font-size: 22px;
   color: #4cc1f6;
 }
 #sroom .VMA {
-  font-size: 25px;
+  font-size: 22px;
 }
 #sroom .texttitles {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -118,7 +167,9 @@ nav .navmenubar1 {
   color: #4cc1f6;
   font-size: 15px;
 }
-
+.bgwhite {
+  background-color: white;
+}
 /*------*/
 /*SCHOOLVISIT*/
 #schoolvisit .disq {
@@ -196,6 +247,15 @@ nav .navmenubar1 {
   color: white;
   border-radius: 50%;
 }
+#footer .navlinkfb {
+  background-color: #4cc1f6;
+  padding-right: 11.5px;
+  padding-left: 11.5px;
+  padding-top: 9.8px;
+  padding-bottom: 9.8px;
+  color: white;
+  border-radius: 50%;
+}
 .bluetext {
   color: #4cc1f6;
 }
@@ -211,12 +271,22 @@ nav .navmenubar1 {
   nav .active {
     color: #4cc1f6;
   }
+  nav .dropmenu{
+    margin-top: 500px;
+  }
+
   /*-----*/
   /*KerdesekEsValaszokFormPage*/
   .mx {
     margin-left: 100px;
     margin-right: 100px;
   }
+  /*ABOUTME*/
+  #aboutme .mx {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  /*-------*/
   /*-----*/
   /*FOOTER*/
   #footer .footerlinks {
@@ -258,6 +328,9 @@ nav .navmenubar1 {
   nav #navbarNav {
     background-color: #4cc1f6;
     width: 100%;
+  }
+  .hideresp {
+    display: none;
   }
   /*------*/
 
@@ -310,6 +383,30 @@ nav .navmenubar1 {
     height: 50px;
   }
   /*--------*/
+  /*TALKS*/
+  #talks .widgetsmobile {
+    justify-content: center;
+  }
+  #talks .moresearch {
+    margin-top: 10px;
+  }
+  /*------*/
+  /*MODINT*/
+  #modind .widgetsmobile {
+    justify-content: center;
+  }
+  #modind .moresearch {
+    margin-top: 10px;
+  }
+  /*------*/
+  /*SROOM*/
+  #sroom .widgetsmobile {
+    justify-content: center;
+  }
+  #sroom .moresearch {
+    margin-top: 10px;
+  }
+  /*------*/
   /*FOOTER*/
   #footer .footerimages {
     display: none;

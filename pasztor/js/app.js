@@ -1,0 +1,11 @@
+$("document").ready(function(){
+    $(".navtoggler").on("click",function(){
+        $(".togglenav").toggle(
+            function(){
+                $(this).addClass("hide");
+            },function(){
+                $(this).removeClass("hide");
+            }
+        )
+    });
+});

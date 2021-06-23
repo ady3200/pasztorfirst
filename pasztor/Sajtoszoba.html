@@ -28,7 +28,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Módosítási indítványok</title>
+    <title>Sajtószoba</title>
   </head>
   <body>
     <!--NAVBAR-->
@@ -56,7 +56,7 @@
           <ul class="navbar-nav navlinksmargin">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#"
-                ><i class="fab fa-facebook-f navlinks"></i
+                ><i class="fab fa-facebook-f navlinkfb"></i
               ></a>
             </li>
             <li class="nav-item">
@@ -88,7 +88,7 @@
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
@@ -98,7 +98,7 @@
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
@@ -108,7 +108,7 @@
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
@@ -120,7 +120,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="#" class="nav-link"
-                ><i class="fas fa-bars navmenubar1"></i
+                ><i class="fas fa-bars navmenubar1 navtoggler"></i
               ></a>
             </li>
           </ul>
@@ -128,49 +128,74 @@
       </div>
     </nav>
     <!---------->
+    <!--NAVTOGGLE-->
+    <div class="hide hideresp togglenav">
+      <div class="darkerbluebg py-3">
+      <div class="d-flex flex-row container justify-content-center">
+        <a href="Beszedek.html"><li class="list-unstyled px-2 pt-1 textwhite">Beszédek <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li> </a>
+        <a href="Sajtoszoba.html"><li class="list-unstyled px-2 pt-1 textwhite">Sajtószoba <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a href="ModositasiInditvanyok.html"><li class="list-unstyled px-2 pt-1 textwhite">Módosítási inditványok <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a href="#"><li class="list-unstyled px-2 pt-1 textwhite">Eseménynaptár <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li> </a>
+        <a href="KerdesekEsValaszok.html"><li class="list-unstyled px-2 pt-1 textwhite">Kérdések - Válaszok <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a>
+          <li class="list-unstyled px-2">
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="Keresés" aria-label="Keresés" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+          </div>
+          </li>
+        </a>
+      </div>
+      </div>
+      </div>
+      <!---------->
     <!--BREADCRUMB-->
     <div class="container mt-2">
     <div class="d-flex flex-row">
         <a href="#" class="text-muted"><u>Kezdőlap</u></a>
         <img src="img/Line 7.png" alt="line" class="img-fluid mx-2">
-        <a href="#" class="text-muted"><u>Módosítási indítványok</u></a>
+        <a href="#" class="text-muted"><u>Sajtószoba</u></a>
     </div>
     </div>
     <!---------->
 
-    <!--MODIND-->
-    <div class="container" id="modind">
-        <div class="display-4 text-center my-3">Módosítási indítványok</div>
+    <!--SROOM-->
+    <div class="container" id="sroom">
+        <div class="display-4 text-center my-3">Sajtószoba</div>
         <div class="mx mt-5">
-        <!--FIRST POST-->
-        <div class="d-flex flex-row mb-4">
-            <p class="text-muted mt-2 me-2"><small>Szűrés:</small></p>
-            <ul class="nav nav-pills">
-                <li class="nav-item mx-3">
-                 <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="hangszoro" class="img-fluid me-1"> hang</a></small>
-                </li>
-                <li class="nav-item mx-3">
-                  <small><a class="nav-link widgets" href="#"><img src="img/Union.png" alt="union" class="img-fluid me-1"> szöveg</a></small>
-                </li>
-                <li class="nav-item mx-3">
-                  <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="video" class="img-fluid me-1"> videó</a></small>
-                </li>
-                <li class="nav-item mx-3">
-                  <small><a class="nav-link widgets" href="#"><i class="fas fa-search me-1"></i>  további szűrés</a></small>
-                </li>
-            </ul>
-        </div>
+        <div class="row mb-5">
+          <div class="col-lg-1">
+          <p class="text-muted mt-2 me-2"><small>Szűrés:</small></p>
+          </div>
+          <div class="col-lg-8">
+              <ul class="nav nav-pills widgetsmobile">
+                  <li class="nav-item me-3">
+                   <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="hangszoro" class="img-fluid me-1"> hang</a></small>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <small><a class="nav-link widgets" href="#"><img src="img/Union.png" alt="union" class="img-fluid me-1"> szöveg</a></small>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="video" class="img-fluid me-1"> videó</a></small>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <small><a class="nav-link widgets moresearch" href="#"><i class="fas fa-search me-1"></i>  további szűrés</a></small>
+                  </li>
+              </ul>
+          </div>
+      </div> 
+      <!--FIRST POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">A helyhatósági választásokról szóló törvény módosításáról szóló törvény -<br> elfogadva</p>
+        <p class="texttitles">A magyarittabéi Kerekes József a hetedik VMSZ-es államtitkár</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2020. február 5. 14:55</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2020. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -186,15 +211,15 @@
         <!--SECOND POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">A népképviselők megválasztásáról szóló törvény módosításáról szóló törvény - elfogadva</p>
+        <p class="texttitles">Milyen fejlesztések valósulnak meg a VMSZ közbenjárására?</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2020. február 5. 14:51</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2020. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -210,15 +235,15 @@
         <!--THIRD POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">Levéltári törvény - elfogadva</p>
+        <p class="texttitles">Szabadkai VKT - Napirenden a közvállalatok, a külvárosi helyi közösségek és a környezetvédelem</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2020. január 20. 11:46</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2020. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -234,15 +259,15 @@
         <!--FOURTH POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">Az állami hivatalnokokról szóló törvény módosításairól szóló törvény - <br> elfogadva</p>
+        <p class="texttitles">A magyarittabéi Kerekes József a hetedik VMSZ-es államtitkár</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2018. november 27. 09:56</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -258,15 +283,15 @@
         <!--FIFTH POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">A felsőoktatásról szóló törvény módosításáról szóló törvény - elfogadva</p>
+        <p class="texttitles">Szabadkai VKT - Napirenden a közvállalatok, a külvárosi helyi közösségek és a környezetvédelem</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2018. szeptember 21. 09:43</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -282,15 +307,15 @@
         <!--SIXTH POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">A helyhatósági választásokról szóló törvény módosításáról szóló törvény - elfogadva</p>
+        <p class="texttitles">Milyen fejlesztések valósulnak meg a VMSZ közbenjárására?</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2020. február 5. 14:55</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -306,39 +331,15 @@
         <!--SEVENTH POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">A népképviselők megválasztásáról szóló törvény módosításáról szóló törvény - elfogadva</p>
+        <p class="texttitles">A magyarittabéi Kerekes József a hetedik VMSZ-es államtitkár</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2020. február 5. 14:51</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
-        </div>
-        </div>
-        <div class="col-lg-2">
-        <ul class="nav nav-pills">
-            <li class="nav-item mt-1">
-                <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="hangszoro" class="img-fluid me-1"> hang</a></small>
-            </li>
-        </ul>
-        </div>
-        </div>
-        <hr>
-        <!------>
-        <!--EIGHT POST-->
-        <div class="row">
-        <div class="col-lg-10">
-        <p class="texttitles">Levéltári törvény - elfogadva</p>
-        <div class="d-flex flex-row">
-        <p class="widgets2 px-1 text-muted">miniszterelnök</p>
-        <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
-        <p class="widgets2 px-1 text-muted">illegális migránsok</p>
-        </div>
-        <div class="d-flex">
-        <p class="date">2020. január 20. 11:46</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
@@ -351,24 +352,48 @@
         </div>
         <hr>
         <!------>
-        <!--NINETH POST-->
+        <!--EIGHT POST-->
         <div class="row">
         <div class="col-lg-10">
-        <p class="texttitles">Az állami hivatalnokokról szóló törvény módosításairól szóló törvény - <br> elfogadva</p>
+        <p class="texttitles">Szabadkai VKT - Napirenden a közvállalatok, a külvárosi helyi közösségek és a környezetvédelem</p>
         <div class="d-flex flex-row">
         <p class="widgets2 px-1 text-muted">miniszterelnök</p>
         <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
         <p class="widgets2 px-1 text-muted">illegális migránsok</p>
         </div>
         <div class="d-flex">
-        <p class="date">2018. november 27. 09:56</p>
-        <p class="text-muted  ms-2 mandate">VI. mandátum</p>
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
         </div>
         </div>
         <div class="col-lg-2">
         <ul class="nav nav-pills">
             <li class="nav-item mt-1">
-                <small><a class="nav-link widgets" href="#"><img src="img/Union.png" alt="union" class="img-fluid me-1"> szöveg</a></small>
+                <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="hangszoro" class="img-fluid me-1"> hang</a></small>
+            </li>
+        </ul>
+        </div>
+        </div>
+        <hr>
+        <!------>
+        <!--NINETH POST-->
+        <div class="row">
+        <div class="col-lg-10">
+        <p class="texttitles">Milyen fejlesztések valósulnak meg a VMSZ közbenjárására?</p>
+        <div class="d-flex flex-row">
+        <p class="widgets2 px-1 text-muted">miniszterelnök</p>
+        <p class="widgets2 px-1 text-muted mx-2">Ana Brnabić</p>
+        <p class="widgets2 px-1 text-muted">illegális migránsok</p>
+        </div>
+        <div class="d-flex">
+        <p class="date">2017. december 17.</p>
+        <p class="text-muted  ms-2 VMA">Vajdaság MA</p>
+        </div>
+        </div>
+        <div class="col-lg-2">
+        <ul class="nav nav-pills">
+            <li class="nav-item mt-1">
+                <small><a class="nav-link widgets" href="#"><img src="img/Vector (Stroke).png" alt="video" class="img-fluid me-1"> videó</a></small>
             </li>
         </ul>
         </div>
@@ -404,7 +429,7 @@
            <img src="img/image 10.png" alt="image10">
         </div>
         <div class="mt-1 footerlinks">
-            <i class="fab fa-facebook-f navlinks mx-2"></i>
+            <i class="fab fa-facebook-f navlinkfb mx-2"></i>
             <i class="fab fa-instagram navlinks mx-2"></i>
             <i class="fab fa-youtube navlinks mx-2"></i>
             <i class="fab fa-linkedin-in navlinks mx-2"></i>
@@ -421,5 +446,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

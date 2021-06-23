@@ -28,7 +28,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Kapcsolat</title>
+    <title>Kérdések és válaszok form</title>
   </head>
   <body>
     <!--NAVBAR-->
@@ -56,7 +56,7 @@
           <ul class="navbar-nav navlinksmargin">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#"
-                ><i class="fab fa-facebook-f navlinks"></i
+                ><i class="fab fa-facebook-f navlinkfb"></i
               ></a>
             </li>
             <li class="nav-item">
@@ -88,7 +88,7 @@
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
@@ -98,17 +98,17 @@
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Kapcsolat.html"
-                ><span class="font-weight-bold navlinkblack active"
+                ><span class="font-weight-bold navlinkblack"
                   >Kapcsolat
                   <img
                     src="img/Line 7.png"
                     alt="Line"
-                    class="img-fluid ps-2" /></span
+                    class="img-fluid ps-1" /></span
               ></a>
             </li>
             <li class="nav-item">
@@ -120,7 +120,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="#" class="nav-link"
-                ><i class="fas fa-bars navmenubar1"></i
+                ><i class="fas fa-bars navmenubar1 navtoggler"></i
               ></a>
             </li>
           </ul>
@@ -128,42 +128,63 @@
       </div>
     </nav>
     <!---------->
+    <!--NAVTOGGLE-->
+    <div class="hide hideresp togglenav">
+      <div class="darkerbluebg py-3">
+      <div class="d-flex flex-row container justify-content-center">
+        <a href="Beszedek.html"><li class="list-unstyled px-2 pt-1 textwhite">Beszédek <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li> </a>
+        <a href="Sajtoszoba.html"><li class="list-unstyled px-2 pt-1 textwhite">Sajtószoba <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a href="ModositasiInditvanyok.html"><li class="list-unstyled px-2 pt-1 textwhite">Módosítási inditványok <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a href="#"><li class="list-unstyled px-2 pt-1 textwhite">Eseménynaptár <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li> </a>
+        <a href="KerdesekEsValaszok.html"><li class="list-unstyled px-2 pt-1 textwhite">Kérdések - Válaszok <span class="ms-2"><img src="img/Line11.png" alt="line" class="img-fluid"></span></li></a>
+        <a>
+          <li class="list-unstyled px-2">
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="Keresés" aria-label="Keresés" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+          </div>
+          </li>
+        </a>
+      </div>
+      </div>
+      </div>
+      <!---------->
     <!--BREADCRUMB-->
     <div class="container mt-2">
     <div class="d-flex flex-row">
-        <a href="#" class="text-muted"><u>Kezdőlap</u></a>
-        <img src="img/Line 7.png" alt="line" class="img-fluid mx-2">
-        <a href="#" class="text-muted"><u>Kapcsolat</u></a>
+        <p class="text-muted"><u>Kezdőlap</u></p>
+        <p class="text-muted mx-1">|</p>
+        <p class="text-muted"><u>Kérdések és válaszok</u></p>
+        <p class="text-muted mx-1">|</p>
+        <p class="text-muted"><u>Tegyen fel kérdést</u></p>
     </div>
     </div>
     <!---------->
-
-    <!--CONTACT-->
-    <div class="container" id="contact">
-        <div class="display-4 text-center my-3">Kapcsolat</div>
-        <div class="row">
-            <div class="col-lg-4 text-center">
-            <img src="img/image 8(1).png" alt="image8" class="img-fluid">
-            <p class="contacttitle mt-2">Vajdasági Magyar Szövetség</p>
-            <p>Fasizmus Áldozatainak Tere 9. <br> 24 000 Szabadka, Szerbia</p>
-            <p class="mt-2">+ 381 (0)24 553 801</p>
-            <p class="mt-2">pasztorbalint@vmsz.org.rs</p>
+    <!--FORM-->
+    <div class="container mt-2">
+        <div class="mx">
+        <div class="display-4 text-center">Kérdések és Válaszok</div>
+        <p class="formtext mt-3">Töltse ki az alábbi beviteli mezőket, majd kattintson az Elküld gombra, amely a lap alján található. A feltett kérdésre, amennyiben senki számára sem sértő, napokon belül választ kap.</p>
+        <form action="#">
+            <label for="name" class="mt-2">Név<span class="lightbluecolor">*</span></label>
+            <input type="text" id="name" placeholder="Petrovics Péter" class="form-control w-100">
+            <div class="row mt-3">
+                <div class="col-lg-6">
+                    <label for="tel">Telefon</label>
+                    <input type="text" id="tel" placeholder="0601234567" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" class="form-control">
+                </div>
             </div>
-            <div class="col-lg-4 text-center">
-            <img src="img/image 8(1).png" alt="image8" class="img-fluid">
-            <p class="contacttitle mt-2">Szerb Köztársaság Népképviselőháza
-            Vajdasági Magyar Szövetség Frakció</p>
-            <p>Trg Nikole Pašića 13. <br> 1. emelet, 32-es számú iroda <br> 11 000 Belgrád, Szerbia</p>
-            <p class="mt-2">+ 381 (0)11 3026 328 <br> + 381 (0)11 3223 604</p>
-            <p class="mt-2">pasztorbalint@vmsz.org.rs</p>  
+            <label for="message" class="mt-3">Üzenet<span>*</span></label>
+            <textarea  id="message" cols="30" rows="10" class="form-control"></textarea>
+            <p class="text-muted text-center">A *-gal jelölt mezől kitöltése kötelező</p>
+            <div class="text-center">
+            <button class="btn mt-2 px-5 py-2 roundedbutton">Küldés</button>
             </div>
-            <div class="col-lg-4 text-center">
-            <img src="img/image 10(1).png" alt="image10" class="img-fluid">
-            <p class="contacttitle mt-2">Szabadka Város <br> Képviselő-testülete</p>
-            <p>Szabadság Tér 1. <br> 24 000 Szabadka, Szerbia</p>
-            <p class="mt-2">+381 (0)24 626-969 <br> +381 (0)24 626-793</p>
-            <p class="mt-2">sgpredsednik@subotica.rs</p>
-            </div>
+        </form>
         </div>
     </div>
     <!---------->
@@ -178,7 +199,7 @@
            <img src="img/image 10.png" alt="image10">
         </div>
         <div class="mt-1 footerlinks">
-            <i class="fab fa-facebook-f navlinks mx-2"></i>
+            <i class="fab fa-facebook-f navlinkfb mx-2"></i>
             <i class="fab fa-instagram navlinks mx-2"></i>
             <i class="fab fa-youtube navlinks mx-2"></i>
             <i class="fab fa-linkedin-in navlinks mx-2"></i>
@@ -195,5 +216,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
