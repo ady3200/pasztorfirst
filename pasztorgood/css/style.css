@@ -68,7 +68,24 @@ nav .navtogglerx {
   background-color: #4cc1f6;
 }
 /*------*/
+/*INDEX*/
+#indexheader {
+  background-image: url("../img/indexheader.png");
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#indexheader .bluebox {
+  background-color: #4cc1f6;
+  color: white;
+  opacity: 0.8;
+  padding: 90px 30px 90px 30px;
+}
+#carousel a {
+  text-decoration: none;
+}
 
+/*------*/
 /*KerdesekEsValaszokFormPage*/
 .formtext {
   font-size: 20px;
@@ -289,7 +306,11 @@ nav .navtogglerx {
   nav .dropmenu {
     margin-top: 500px;
   }
-
+  /*INDEX*/
+  #indexheader .bluebox {
+    margin-top: 250px;
+  }
+  /*-----*/
   /*-----*/
   /*KerdesekEsValaszokFormPage*/
   .mx {
@@ -351,7 +372,11 @@ nav .navtogglerx {
     display: none;
   }
   /*------*/
-
+  /*INDEX*/
+  #indexheader .bluebox {
+    margin-top: 378px;
+  }
+  /*-------*/
   /*MIKROBLOG*/
   #mikroblog .avatar {
     height: 50px;

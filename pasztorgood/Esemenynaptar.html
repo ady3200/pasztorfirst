@@ -27,6 +27,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/calendar.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Eseménynaptár</title>
   </head>
@@ -93,7 +94,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Mikroblog.html"
-                ><span class="font-weight-bold navlinkblack active"
+                ><span class="font-weight-bold navlinkblack"
                   >Mikroblog
                   <img
                     src="img/Line 7.png"
@@ -161,27 +162,35 @@
     </div>
     <!---------->
 
-    <!--MIKROBLOG--> 
+    <!--CALENDAR--> 
     <div class="display-4 text-center my-3">Eseménynaptár</div>
     <div class="bgwhite py-5">
         <div class="container">
         <div class="row">
         <div class="col-lg-4">
-            <div class="bglightblue">
-                CALENDAR
-            </div>  
+          <!--the calendar-->
+          <div class="calendar calendar-first" id="calendar_first">
+				    <div class="calendar_header bglightblue d-flex">
+				        <button class="switch-month switch-left ms-2"> <i class="fa fa-chevron-left"></i></button>
+				         <h2 class="ms-4 mt-1"></h2>
+				        <button class="switch-month switch-right ms-3"> <i class="fa fa-chevron-right"></i></button>
+				    </div>
+				    <div class="calendar_weekdays"></div>
+				    <div class="calendar_content"></div>
+					</div>
+          <!------>
         </div>
         <div class="col-lg-8">
-            <div class="d-flex flex-row bglightblue pt-2">
-                <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 cal">
-                <p>2020. december 11. csütörtök</p>
+            <div class="d-flex flex-row bglightblue py-1">
+                <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 mt-1 cal">
+                <p class="mt-1">2020. december 11. csütörtök</p>
             </div>
             <div class="row">
                 <div class="col-lg-6">10:00-Szabadka</div>
                 <div class="col-lg-6">Találkozó a Caritas vezetőivel</div>
             </div>
             <div class="row my-4">
-                <div class="col-lg-6">11:00-Szabadka</div>
+                <div class="col-lg-6">11:00 - Torontálvásárhely</div>
                 <div class="col-lg-6">Miben hasonlít Torontálvásárhely és Székelykeve Kraljevora és Majdanpekre?</div>
             </div>
             <div class="row">
@@ -192,12 +201,136 @@
        </div>
        </div>
     </div>
+    <div class="container">
+      <h4 class="text-center mt-4 lastevents">Legutóbbi események</h4>
+      <!--ONE DATE-->
+      <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. december 22.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Az MTTK dékánját és dékánhelyettesét fogadta dr. Pásztor Bálint és Kern Imre</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">15:00 - Újvidék</div>
+        <div class="col-lg-8">Szabadkai VKT - Napirenden a közvállalatok, a külvárosi helyi közösségek és a környezetvédelem</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. december 14.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Parlamenti Ülés</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. december 12.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Szabadka</div>
+        <div class="col-lg-8">Találkozó a Caritas vezetőivel</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">11:00 - Torontálvásárhely</div>
+        <div class="col-lg-8">Miben hasonlít Torontálvásárhely és Székelykeve Kraljevora és Majdanpekre?</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. december 5.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Parlamenti Ülés</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. november 30.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Parlamenti Ülés</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. május 22.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">15:00 - Hajdújárás</div>
+        <div class="col-lg-8">A VMSZ Elnökségének ülése</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-lg-4">15:00 - Hajdújárás</div>
+        <div class="col-lg-8">a VMSZ Tanácsának ülése</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Parlamenti ülés</div>
+      </div>
+      <hr>
+      <!---------->
+       <!--ONE DATE-->
+       <div class="row">
+        <div class="col-lg-2">
+        <div class="d-flex flex-row bglightblue pt-2">
+          <img src="img/Vector(6).png" alt="calendar" class="img-fluid me-2 ps-1 cal">
+          <p>2020. december 5.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-4">10:00 - Belgrád</div>
+        <div class="col-lg-8">Parlamenti Ülés</div>
+      </div>
+      <!---------->
+    </div>
     
     
     <!------>
         <!--PAGINATION-->
+        <div class="container">
         <div class="row pagi mt-5">
-        <div class="col-lg-10">
+        <div class="col-lg-10 text-center">
         <div class="d-flex flex-row justify-content-center">
             <a href="#"><p class="mx-3"><img src="img/Polygon 7.png" class="img-fluid" alt="leftarrow"></p></a>
             <a href="#"><p class="mx-3">1</p></a>
@@ -209,8 +342,8 @@
         </div>
         </div>
         </div>
+        </div>
         <!------>
-    </div>
     <!---------->
      
     <!--FOOTER-->
@@ -242,5 +375,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/app.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>
