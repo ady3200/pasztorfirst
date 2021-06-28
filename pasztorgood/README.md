@@ -1,2 +1,0 @@
-# pasztorfirst
- Pasztor First
